@@ -1,6 +1,4 @@
 pathlib
 geopy
-pandas
 flask
 coverage
-gunicorn

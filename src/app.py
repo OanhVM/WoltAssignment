@@ -1,6 +1,7 @@
 import json
 import pathlib
 from datetime import datetime
+from os import getenv
 
 from flask import Flask, request, jsonify
 from geopy.distance import geodesic
@@ -220,7 +221,4 @@ def discovery():
 
 
 if __name__ == '__main__':
-    app.run()
-    # get_available_restaurants()
-
-    # print(json.dumps(get_restaurants(24.941244, 60.174), indent=4))
+    app.run(host="0.0.0.0", port=getenv("PORT"))
