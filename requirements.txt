@@ -3,3 +3,4 @@ geopy
 pandas
 flask
 coverage
+gunicorn
